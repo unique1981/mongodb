@@ -4,6 +4,8 @@ kind: StatefulSet
 metadata:
   name: mongodb
   namespace: database
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   serviceName: mongodb-headless
   podManagementPolicy: OrderedReady
