@@ -4,6 +4,8 @@ kind: StatefulSet
 metadata:
   name: mongodb-arbiter
   namespace: database
+  annotations:
+    argocd.argoproj.io/sync-wave: "7"
 spec:
   serviceName: mongodb-arbiter-headless
   selector:
