@@ -7,7 +7,7 @@ metadata:
   labels:
     team: devops-by-example
   annotations:
-    argocd.argoproj.io/sync-wave: "6"
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   endpoints:
   - honorLabels: true
