@@ -4,6 +4,8 @@ kind: Service
 metadata:
   name: mongodb-metrics
   namespace: database
+  annotations:
+    argocd.argoproj.io/sync-wave: "9"
   labels:
     app.kubernetes.io/name: mongodb
 spec:
