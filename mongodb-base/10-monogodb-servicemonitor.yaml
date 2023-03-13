@@ -4,6 +4,8 @@ kind: ServiceMonitor
 metadata:
   name: mongodb
   namespace: monitoring
+  annotations:
+    argocd.argoproj.io/sync-wave: "10"
   labels:
     team: devops-by-example
 spec:
