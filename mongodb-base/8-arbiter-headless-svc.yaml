@@ -4,6 +4,8 @@ kind: Service
 metadata:
   name: mongodb-arbiter-headless
   namespace: database
+  annotations:
+    argocd.argoproj.io/sync-wave: "8"
 spec:
   type: ClusterIP
   clusterIP: None
