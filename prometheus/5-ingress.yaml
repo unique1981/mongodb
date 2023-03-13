@@ -6,7 +6,7 @@
 #   namespace: monitoring
 #   annotations:
 #     kubernetes.io/ingress.class: <ingress-class>
-#     argocd.argoproj.io/sync-wave: "5"
+#     argocd.argoproj.io/sync-wave: "4"
 # spec:
 #   rules:
 #   - host: prometheus.<domain>.com
