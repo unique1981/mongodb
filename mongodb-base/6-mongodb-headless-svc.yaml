@@ -7,8 +7,9 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "6"
 spec:
-  type: ClusterIP
-  clusterIP: None
+  type: LoadBalancer
+  #type: ClusterIP
+  #clusterIP: None
   publishNotReadyAddresses: true
   ports:
   - name: mongodb
