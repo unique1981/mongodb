@@ -9,7 +9,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "6"
 spec:
-  clusterIP: None
+  #clusterIP: None
   ports:
   - name: http
     port: 8080
