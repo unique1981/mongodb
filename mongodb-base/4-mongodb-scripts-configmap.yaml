@@ -4,6 +4,8 @@ kind: ConfigMap
 metadata:
   name: mongodb-scripts
   namespace: database
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
 data:
   setup.sh: |-
     #!/bin/bash
