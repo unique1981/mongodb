@@ -12,6 +12,6 @@
      http:
        paths:
        - path: /
-         backend:
-           serviceName: prometheus-operated
-           servicePort: 9090
+       backend:
+         serviceName: prometheus-operated
+         servicePort: 9090
