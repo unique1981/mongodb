@@ -8,6 +8,7 @@ metadata:
     argocd.argoproj.io/sync-wave: "6"
 spec:
   type: LoadBalancer
+  clusterIP: 127.0.0.1
   #type: ClusterIP
   #clusterIP: None
   publishNotReadyAddresses: true
