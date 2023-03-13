@@ -5,8 +5,7 @@
    name: prometheus
    namespace: monitoring
    annotations:
-     kubernetes.io/ingress.class: nginx
-     argocd.argoproj.io/sync-wave: "4"
+     kubernetes.io/ingress.class: external-ingress-nginx
  spec:
    rules:
    - host: linode-test-4unique.com
