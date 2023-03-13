@@ -9,7 +9,7 @@ metadata:
 spec:
   serviceName: mongodb-headless
   podManagementPolicy: OrderedReady
-  replicas: 2
+  replicas: 1
   updateStrategy:
     type: RollingUpdate
   selector:
