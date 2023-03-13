@@ -1,18 +1,18 @@
-# ---
-# apiVersion: networking.k8s.io/v1
-# kind: Ingress
-# metadata:
-#   name: prometheus
-#   namespace: monitoring
-#   annotations:
-#     kubernetes.io/ingress.class: <ingress-class>
-#     argocd.argoproj.io/sync-wave: "4"
-# spec:
-#   rules:
-#   - host: prometheus.<domain>.com
-#     http:
-#       paths:
-#       - path: /
-#         backend:
-#           serviceName: prometheus-operated
-#           servicePort: 9090
+ ---
+ apiVersion: networking.k8s.io/v1
+ kind: Ingress
+ metadata:
+   name: prometheus
+   namespace: monitoring
+   annotations:
+     kubernetes.io/ingress.class: <ingress-class>
+     argocd.argoproj.io/sync-wave: "4"
+ spec:
+   rules:
+   - host: linode-test-4unique.com
+     http:
+       paths:
+       - path: /
+         backend:
+           serviceName: prometheus-operated
+           servicePort: 9090
