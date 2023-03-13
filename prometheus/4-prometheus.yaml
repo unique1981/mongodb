@@ -4,6 +4,8 @@ kind: Prometheus
 metadata:
   name: demo
   namespace: monitoring
+  annotations:
+    argocd.argoproj.io/sync-wave: "4"
 spec:
   version: v2.25.0
   alerting:
