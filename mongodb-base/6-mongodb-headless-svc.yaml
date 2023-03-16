@@ -7,7 +7,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "6"
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   #clusterIP: None
   publishNotReadyAddresses: true
   ports:
