@@ -73,11 +73,11 @@ spec:
         - name: PGID
           value: "1000"
         - name: TZ
-          value: "Australia/Brisbane"
+          value: "Europe/Paris"
         - name: USER_NAME
           value: "admin"
         - name: USER_PASSWORD
-          value: "Password01!"
+          value: "P@ssw0rd"
         - name: PASSWORD_ACCESS
           value: "true"
         - name: SUDO_ACCESS
